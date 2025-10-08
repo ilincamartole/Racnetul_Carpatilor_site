@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+input{display:none;}
+body {
+  background-color: rgb(174, 186, 200);
+  color:#465876;
+  font-family: 'Oswald', sans-serif;
+  margin: 0;
+  padding: 0;
+  size: 300pc;
+}
+header {
+  background-color: rgb(51, 65, 104);
+  padding: 20px;
+  text-align: center;
+  border-bottom: 3px solid #577cbc;
+}
+header > h1 {
+    color: white;
+    font-size: 2.5em;
+    margin: 0;
+    animation: pulse ease-in;
+  }
+
+header p {
+    margin: 0;
+    font-size: 1.5rem;
+    color: white;
+}
+header figure {
+    position: center;
+    top: 10px;
+    right: 10px;
+    width: 100px;
+    border: none;
+}
+
+header figure img {
+    width: 100%;
+    border-radius: 50%;
+}
+nav ul{
+  list-style-type: none;
+}
+nav ul, nav li{
+  margin:0;
+  padding:0;
+}
+nav a{
+  text-decoration: none;
+  color:white;
+  display: block;
+  font-weight: bold;
+  transition: background-color 3s, color 3s, font-size 3s;
+
+}
+nav {
+  background-color:rgb(123, 140, 176);
+  height: 50px;
+  width:100%;
+  position:sticky;
+  top:0;
+  z-index:3;
+}
+nav>ul.meniu>li>ul.submeniu{
+  display: none;
+}
+nav>ul.meniu>li:hover>ul.submeniu{
+  display: block;
+}
+ul.meniu{
+  display:flex;
+  flex-flow:row nowrap;
+  justify-content: space-around;
+}
+ul.meniu>li{
+  height:50px;
+  line-height: 50px;
+  text-align: center;
+  border:1px solid white;
+  flex:1 200px;
+}
+ul.submeniu>li{
+  height:50px;
+  line-height: 50px;
+  text-align: center;
+  border:1px solid white;
+  background-color: rgb(123, 140, 176);
+}
+nav a:hover{
+  background-color: darkslateblue;
+  color:black;
+  font-size: 18px;
+  animation: sus 0.5s;
+}
+
+
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem;
+}
+
+section {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    
+}
+img[alt="horoscop"]
+{
+    width: 600px;
+    height: 500px;
+}
+
+img[alt="turta"]
+{
+    width: max-content;
+    height: max-content;
+}
+section p{
+    text-align: center;
+}
+
+
+footer {
+    background-color: gainsboro;
+    padding: 20px;
+    text-align: center;
+    border-top: 3px solid rgb(137, 172, 237);
+  }
+  footer > a{
+    color:beige;
+    background-color: blue;
+    text-decoration: none;
+    padding:10px;
+    display:inline-block;
+    border-radius: 15px;
+    font-weight: bold;
+  }
+  footer > a:hover{
+    font-size: 20px;
+  }
+  @media (max-width: 992px) {
+    .meniu {
+      flex-direction: column; /* Stack the menu vertically */
+      gap: 10px;
+    }
+  
+    .submeniu {
+      position: static; /
+      display: block;
+    }
+  }
+  
+ 
+  @media (max-width: 768px) {
+    .container {
+      padding: 0 10px; 
+    }
+  
+    .meniu a {
+      font-size: 14px;
+      padding: 5px; 
+    }
+  }
+  
+  
+  @media (max-width: 576px) {
+    nav {
+      background-color: #ddd; 
+      padding: 5px; 
+    }
+  
+    .meniu {
+      flex-direction: column;
+      gap: 5px;
+    }
+  
+    .meniu a {
+      font-size: 12px; 
+      padding: 3px; 
+    }
+  }
+
+  

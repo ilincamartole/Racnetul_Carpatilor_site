@@ -1,0 +1,147 @@
+<!DOCTYPE HTML>
+<html lang="ro">
+    <head>
+      <script defer>
+        document.addEventListener("DOMContentLoaded", function() {
+          let countdownTime = 10;
+
+          
+          const timeRemainingElement = document.getElementById("timeRemaining");
+          const timeUpMessage = document.getElementById("timeUpMessage");
+
+          
+          function updateCountdown() {
+            
+            timeRemainingElement.textContent = countdownTime;
+
+           
+            if (countdownTime <= 0) {
+              timeUpMessage.style.display = "block"; 
+              clearInterval(countdownInterval); 
+            } else {
+              countdownTime--; 
+            }
+          }
+
+       
+          const countdownInterval = setInterval(updateCountdown, 1000);
+        });
+      </script>
+      <script src="JAVA.js" defer></script>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">  
+        <meta charset="UTF-8">
+        <title>RĂCNETUL CARPAȚILOR</title>
+        <style>
+          table,
+          th,
+          td {
+            border: 1px solid black;
+            border-collapse: collapse;
+          }
+          figure{
+            display:inline-block;
+            width:20%;
+          }
+          figure>img {width:100%;}
+          </style>
+          <link rel="stylesheet" href="PROIECT.css">
+          <link rel="icon" type="image/png" href="POZE_PROIECT/FAVICON.jpg">
+      </head>
+      <body>
+        <main>
+        <header id="inceput">
+          <div class="pulse">
+          <h1>ZIARUL RĂCNETUL CARPAȚILOR</h1> </div>
+          <br>
+          <p>ȘTIRI ACTUALE, REALE ȘI <em>TRANSPARENTE</em>.</p></div>
+          <figure>
+            <img src="POZE_PROIECT/FAVICON.jpg" alt="inc">
+          </figure>
+        </header>
+  
+        
+        <nav>
+          <ul class="meniu">
+        
+            <li><a href="PROIECT.html">Stirile zilei</a>
+            <ul class="submeniu">
+              <li><a href="#stiripolitic">Politica</a></li>
+              <li><a href="#stirivreme">vreme</a></li>
+              <li><a href="#stiriedu">educatie</a></li>
+            </ul>
+          </li>
+            <li><a href="zodiac_mancare.html">Rubrica de retete si zodiac</a></li>
+            <li><a href="stiridinsport.html">Stiri din sport</a>
+              <ul class="submeniu">
+                <li><a href="#fotbal">Fotbal</a></li>
+                <li><a href="#tenis">Tenis</a></li>
+                <li><a href="#dans">Dans</a></li>
+              </ul></li>
+            <li><a href="visuals.html">Materiale video </a>
+              <ul class="submeniu">
+                <li><a href="visuals.html#videos">Video</a></li>
+                <li><a href="visuals.html#fotos">Foto</a></li>
+              </ul></li>
+            <li><a href="comentariu.html">Lasa un comentariu!</a></li>
+            <li><a href="#final">contact</a></li>
+        
+          </ul>
+          </nav>
+        
+        <div class="grid-container">
+  
+        <section id="stirivreme">
+         <h1>VREME</h1>
+          <h2>Prima ninsoare serioasă din acest sezon a provocat haos pe drumurile din țară și pe calea ferată. Cele mai mari probleme au fost pe Drumul Național 1, unde, joi înainte de răsărit, un TIR a intrat într-un parapet la Bușteni, blocând complet circulația.</h2>
+        </section>
+        <section id="reclama1">
+          <figure>
+            <img src="POZE_PROIECT/reclama1.png" alt="reclamacocacola">
+          </figure>
+        </section>
+
+        <section id="stiripolitic">
+           <h1>POLITIC</h1>
+          <h2>In preajma fiecărei runde de alegeri, politicienii își aduc aminte brusc și de românii din afara țării, adică de cei care lucrează, trăiesc sau studiază în diaspora. Motivul e simplu: ei au arătat, în repetate rânduri, că pot răsturna planurile politice din țară, prin mobilizare masivă la vot, în străinătate.</h2>
+        </section>
+
+        <section id="stiriedu">
+         <h1>EDUCATIE</h1>
+          <h2>Profesorii nu vor fi înlocuiți de Inteligența Artificială în viitorul apropiat și mediu, spune Mihnea Moisescu, decanul Facultății de Automatică, de la Politehnica din București: Toate disciplinele pe care le predați aduc plusvaloare elevului.</h2>
+        </section>
+
+        <section id="sectiune-butoane">
+          <button id="buton-coloreaza-sectiuni">Colorează Secțiunile</button>
+        </section>
+
+        <section id="eventSection">
+          <h2 id="eventTitle">Marea Stire de Mâine</h2>
+          <p>Nu ratați marea stire de mâine! Fiti cu ochii in patru!</p>
+      
+          <div id="timerContainer">
+            <p>Rămas până la eveniment: <span id="timeRemaining">10</span> secunde</p>
+            <p id="timeUpMessage">Timpul s-a terminat! Urmeaza stirea!</p>
+          </div>
+        </section>
+        
+        </main>
+      </div>
+       
+      <footer>
+           <section id="final">
+              <p>© 2003-2024 Răcnetul Carpaților. Toate drepturile rezervate | 1277 vizitatori acum
+               Textele şi fotografiile sunt proprietatea titularilor de copyright şi nu pot fi reproduse fără acordul scris al acestora.
+  
+              Follow us: @racnetulcarpatilor on Twitter | Răcnetul.Carpaților on Facebook</p>
+              <a href="PROIECT.html">
+                <button style="padding: 10px 20px; font-size: 16px; background-color: #304862; color: white; border: none; border-radius: 5px; cursor: pointer;">
+                  Înapoi la pagina principală
+                </button>
+              </a>
+          </section>
+        </footer>
+
+    </body>     
+</html>

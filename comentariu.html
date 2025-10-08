@@ -1,0 +1,230 @@
+<!DOCTYPE HTML>
+
+<html lang="ro">
+<head>
+  <script src="jscomentarii.js" defer></script>
+  <link rel="stylesheet" href="comentariu.css"> 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>RĂCNETUL CARPAȚILOR</title>
+  <style>
+    #login {
+      margin: 50px auto;
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      width: 60%;
+      max-width: 600px;
+      text-align: center;
+    }
+
+    #login h2 {
+      font-size: 24px;
+      color: #304862;
+      margin-bottom: 15px;
+    }
+
+
+
+    #login button {
+      padding: 10px 20px;
+      background-color: #577cbc;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    #login button:hover {
+      background-color: #304862;
+    }
+
+    #login button:active {
+      background-color: #2a3e5b;
+    }
+    #formLogin{
+
+      margin: 50px auto;
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      width: 60%;
+      max-width: 600px;
+      text-align: center;
+    }
+
+
+    #welcome{
+      margin: 50px auto;
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      width: 60%;
+      max-width: 600px;
+      text-align: center;
+    }
+
+    
+
+
+    #comentarii {
+      margin: 50px auto;
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      width: 60%;
+      max-width: 600px;
+      text-align: center;
+    }
+
+    #comentarii h2 {
+      font-size: 24px;
+      color: #304862;
+      margin-bottom: 15px;
+    }
+
+    #comentarii textarea {
+      width: 100%;
+      font-size: 16px;
+      padding: 10px;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      border: 1px solid #ddd;
+    }
+
+    #comentarii button {
+      padding: 10px 20px;
+      background-color: #577cbc;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    #comentarii button:hover {
+      background-color: #304862;
+    }
+
+    #comentarii button:active {
+      background-color: #2a3e5b;
+    }
+
+    #comentarii h3 {
+      margin-top: 20px;
+      font-size: 18px;
+    }
+
+    #listaComentarii {
+      margin-top: 20px;
+      text-align: left;
+    }
+
+    #listaComentarii p {
+      background-color: #f0f0f0;
+      padding: 10px;
+      border-radius: 5px;
+      margin-top: 10px;
+      font-size: 16px;
+      word-wrap: break-word;
+    }
+
+
+
+  </style>
+
+</head>
+<body>
+  <header id="inceput">
+    <div class="pulse">
+      <h1>SECTIUNEA DE COMENTARII</h1>
+    </div>
+
+
+  </header>
+
+  <nav>
+    <ul class="meniu">
+
+      <li><a href="PROIECT.html">Stirile zilei</a>
+      <ul class="submeniu">
+        <li><a href="#stiripolitic">Politica</a></li>
+        <li><a href="#stirivreme">vreme</a></li>
+        <li><a href="#stiriedu">educatie</a></li>
+      </ul>
+    </li>
+      <li><a href="zodiac_mancare.html">Rubrica de retete si zodiac</a></li>
+      <li><a href="stiridinsport.html">Stiri din sport</a>
+        <ul class="submeniu">
+          <li><a href="#fotbal">Fotbal</a></li>
+          <li><a href="#tenis">Tenis</a></li>
+          <li><a href="#dans">Dans</a></li>
+        </ul></li>
+      <li><a href="visuals.html">Materiale video </a>
+        <ul class="submeniu">
+          <li><a href="visuals.html#videos">Video</a></li>
+          <li><a href="visuals.html#fotos">Foto</a></li>
+        </ul></li>
+      <li><a href="comentariu.html">Lasa un comentariu!</a></li>
+      <li><a href="#final">contact</a></li>
+
+    </ul>
+    </nav>
+  
+
+  <main>
+
+    <section id="login">
+      
+        <h2>Autentificare</h2>
+        <form id="formLogin" novalidate>
+          <input type="text" id="username" name="username" placeholder="Introduceți numele" />
+          <input type="password" id="password" name="password" placeholder="Introduceți parola"/>
+          <button type="submit">Autentificare</button>
+
+        </form>
+        <p id="mesajLogin"></p>
+      </section>
+      
+      <section id="welcome" style="display: none;">
+        <h3>Salut, <span id="welcomeName"></span>!</h3>
+        <button id="logoutButton">Logout</button>
+      
+    </section>
+        
+    <section id="comentarii">
+      <h2>Lasă un comentariu!</h2>
+      <textarea id="comentariuText" placeholder="Scrie un comentariu..." rows="4" cols="50"></textarea>
+      <br>
+      <button id="trimiteComentariul">Trimite comentariul</button>
+      <p id="mesajEroare" style="color: red; font-weight: bold; display: none;"></p>
+
+      <h3>Comentarii adăugate:</h3>
+      <div id="listaComentarii">
+
+    
+       
+      </div>
+      <canvas id="canvas" width="400" height="400"></canvas>
+
+    </section>
+  </main>
+
+  <footer>
+    <p id="oraCurenta">Ora curentă: --:--:--</p>
+    <section id="final">
+      <p>© 2003-2024 Răcnetul Carpaților. Toate drepturile rezervate.</p>
+      <a href="PROIECT.html">
+        <button>Înapoi la pagina principală</button>
+      </a>
+    </section>
+  </footer>
+</body>
+</html>

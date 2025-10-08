@@ -1,0 +1,154 @@
+<!DOCTYPE HTML>
+
+<html lang="ro">
+<head>
+  <script defer>
+    // JavaScript for the comment section
+    document.addEventListener("DOMContentLoaded", () => {
+      const butonTrimite = document.getElementById("trimiteComentariul");
+      const textareaComentariu = document.getElementById("comentariuText");
+      const listaComentarii = document.getElementById("listaComentarii");
+
+      butonTrimite.addEventListener("click", () => {
+        const comentariu = textareaComentariu.value.trim();
+        if (comentariu !== "") {
+          const paragrafComentariu = document.createElement("p");
+          paragrafComentariu.textContent = comentariu;
+          listaComentarii.appendChild(paragrafComentariu);
+          textareaComentariu.value = "";
+        } else {
+          alert("Te rog să scrii un comentariu înainte de a-l trimite.");
+        }
+      });
+    });
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>RĂCNETUL CARPAȚILOR</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Oswald', sans-serif;
+    }
+
+    #comentarii {
+      margin: 50px auto;
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      width: 60%;
+      max-width: 600px;
+      text-align: center;
+    }
+
+    #comentarii h2 {
+      font-size: 24px;
+      color: #304862;
+      margin-bottom: 15px;
+    }
+
+    #comentarii textarea {
+      width: 100%;
+      font-size: 16px;
+      padding: 10px;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      border: 1px solid #ddd;
+    }
+
+    #comentarii button {
+      padding: 10px 20px;
+      background-color: #577cbc;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    #comentarii button:hover {
+      background-color: #304862;
+    }
+
+    #comentarii button:active {
+      background-color: #2a3e5b;
+    }
+
+    #comentarii h3 {
+      margin-top: 20px;
+      font-size: 18px;
+    }
+
+    #listaComentarii {
+      margin-top: 20px;
+      text-align: left;
+    }
+
+    #listaComentarii p {
+      background-color: #f0f0f0;
+      padding: 10px;
+      border-radius: 5px;
+      margin-top: 10px;
+      font-size: 16px;
+      word-wrap: break-word;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #304862;
+      color: white;
+    }
+
+    footer button {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header id="inceput">
+    <div class="pulse">
+      <h1>ZIARUL RĂCNETUL CARPAȚILOR</h1>
+    </div>
+    <br>
+    <p>ȘTIRI ACTUALE, REALE ȘI <em>TRANSPARENTE</em>.</p>
+    <figure>
+      <img src="POZE_PROIECT/FAVICON.jpg" alt="inc">
+    </figure>
+  </header>
+
+  <nav>
+    <ul class="meniu">
+      <li><a href="PROIECT.html">Știrile zilei</a></li>
+      <li><a href="#comm">Lasă un comentariu!</a></li>
+      <li><a href="#final">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="comentarii">
+      <h2>Lasă un comentariu!</h2>
+      <textarea id="comentariuText" placeholder="Scrie un comentariu..." rows="4" cols="50"></textarea>
+      <br>
+      <button id="trimiteComentariul">Trimite comentariul</button>
+
+      <h3>Comentarii adăugate:</h3>
+      <div id="listaComentarii">
+        <!-- Comentariile vor fi afișate aici -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <section id="final">
+      <p>© 2003-2024 Răcnetul Carpaților. Toate drepturile rezervate.</p>
+      <a href="PROIECT.html">
+        <button>Înapoi la pagina principală</button>
+      </a>
+    </section>
+  </footer>
+</body>
+</html>

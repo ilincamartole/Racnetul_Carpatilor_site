@@ -1,0 +1,151 @@
+<!DOCTYPE HTML>
+<html lang="ro">
+    <head>
+      <script defer>
+      // Update current time every second
+  function actualizeazaOra() {
+    const elementOra = document.getElementById("oraCurenta");
+    const acum = new Date();
+    const ora = acum.getHours().toString().padStart(2, "0");
+    const minute = acum.getMinutes().toString().padStart(2, "0");
+    const secunde = acum.getSeconds().toString().padStart(2, "0");
+    elementOra.textContent = `Ora curentă: ${ora}:${minute}:${secunde}`;
+  }
+
+  setInterval(actualizeazaOra, 1000);
+  
+  </script>
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">  
+        <meta charset="UTF-8">
+        <title>RĂCNETUL CARPAȚILOR</title>
+        <style>
+          table,
+          th,
+          td {
+            border: 1px solid black;
+            border-collapse: collapse;
+          }
+          figure{
+            border:1px solid red;
+            display:inline-block;
+            width:20%;
+          }
+          figure>img {width:100%;}
+          </style>
+          <link rel="stylesheet" href="visuals1.css">
+      <link rel="icon" type="image/png" href="POZE_PROIECT/FAVICON.jpg">
+
+      </head>
+      <body>
+        <header>
+                    <h1>MATERIALE FOTO-VIDEO</h1>
+</header>
+
+
+  <nav>
+    <ul class="meniu">
+
+      <li><a href="PROIECT.html">Stirile zilei</a>
+      <ul class="submeniu">
+        <li><a href="#stiripolitic">Politica</a></li>
+        <li><a href="#stirivreme">vreme</a></li>
+        <li><a href="#stiriedu">educatie</a></li>
+      </ul>
+    </li>
+      <li><a href="zodiac_mancare.html">Rubrica de retete si zodiac</a></li>
+      <li><a href="stiridinsport.html">Stiri din sport</a>
+        <ul class="submeniu">
+          <li><a href="#fotbal">Fotbal</a></li>
+          <li><a href="#tenis">Tenis</a></li>
+          <li><a href="#dans">Dans</a></li>
+        </ul></li>
+      <li><a href="visuals.html">Materiale video </a>
+        <ul class="submeniu">
+          <li><a href="visuals.html#videos">Video</a></li>
+          <li><a href="visuals.html#fotos">Foto</a></li>
+        </ul></li>
+      <li><a href="comentariu.html">Lasa un comentariu!</a></li>
+      <li><a href="arhiva.html">contact</a></li>
+
+    </ul>
+    </nav>
+    <main>
+      <div class="image-container">
+      <section id="fotos">
+       <a href="PROIECT.html#stirivreme">
+        <figure>
+          <img src="POZE_PROIECT/dezapezire.jpg" alt="zapada">
+          <figcaption>Incercari de dezapezire in tara</figcaption>
+        </figure></a>
+        <a href="PROIECT.html#stiripolitic">
+        <figure>
+          <img src="POZE_PROIECT/urne.jpg" alt="urne">
+          <figcaption>Urmeaza alegerile prezidentiale si parlamentare</figcaption>
+  
+        </figure></a>
+        <a href="zodiac_mancare.html#turtadulce">
+        <figure>
+          <img src ="POZE_PROIECT/oameniturta.jpg" alt="turt">
+        </figure></a>
+        <a href="stiridinsport.html#messi">
+        <figure>
+          <img src="POZE_PROIECT/messi.jpg" alt="messi">
+        </figure></a>
+        <a href="stiridinsport.html#ronaldo">
+        <figure>
+          <img src="POZE_PROIECT/ronaldo.jpg" alt="ronaldo">
+
+        </figure></a>
+        <a href="stiridinsport.html#uefa">
+        <figure>
+          <img src="POZE_PROIECT/kosovarii.jpg" alt="kosovo">
+        </figure></a>
+        <a href="stiridinsport.html#australia">
+        <figure>
+          <img src="POZE_PROIECT/australianca.jpg" alt="aussie">
+        </figure>
+        <figure>
+          <img src="POZE_PROIECT/trump.jpg" alt="trump">
+        </figure></a>
+        <a href="stiridinsport.html#serena">
+        <figure>
+          <img src="POZE_PROIECT/serena.jpg" alt="ser">
+
+        </figure></a>
+        <a href="stiridinsport.html#halep">
+        <figure>
+          <img src="POZE_PROIECT/halep.jpg" alt="halep">
+        </figure>
+        </a>
+        <a href="stiridinsport.html#finalaantalya">
+        <figure>
+          <img src="POZE_PROIECT/finala.jpg" alt="fin">
+        </figure>
+        </a>
+      </section>
+      </div>
+      <section id="videos">
+
+
+      </section>
+    </main>
+    <footer>
+      <p id="oraCurenta">Ora curentă: --:--:--</p>
+      <section id="final">
+
+      <p>© 2003-2024 Răcnetul Carpaților. Toate drepturile rezervate | 1277 vizitatori acum
+        Textele şi fotografiile sunt proprietatea titularilor de copyright şi nu pot fi reproduse fără acordul scris al acestora.
+      
+        Follow us: @racnetulcarpatilor on Twitter | Răcnetul.Carpaților on Facebook</p>
+              <a href="PROIECT.html">
+                <button style="padding: 10px 20px; font-size: 16px; background-color: #304862; color: white; border: none; border-radius: 5px; cursor: pointer;">
+                  Înapoi la pagina principală
+                </button>
+                </a>
+        </section>
+        </footer>
+        </body>
+        </html>
