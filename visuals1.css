@@ -222,33 +222,33 @@
   }
   @media (max-width: 992px) {
     .meniu {
-      flex-direction: column; /* Stack the menu vertically */
+      flex-direction: column; 
       gap: 10px;
     }
   
     .submeniu {
-      position: static; /* Make submenu appear inline */
-      display: block; /* Always show the submenu */
+      position: static; 
+      display: block; 
     }
   }
   
-  /* For tablets and large phones (768px and below) */
+
   @media (max-width: 768px) {
     .container {
-      padding: 0 10px; /* Reduce padding for smaller screens */
+      padding: 0 10px; 
     }
   
     .meniu a {
-      font-size: 14px; /* Smaller font size */
-      padding: 5px; /* Less padding */
+      font-size: 14px;
+      padding: 5px; 
     }
   }
   
-  /* For phones (576px and below) */
+
   @media (max-width: 576px) {
     nav {
-      background-color: #ddd; /* Different background color for small screens */
-      padding: 5px; /* Reduce padding */
+      background-color: #ddd; 
+      padding: 5px; 
     }
   
     .meniu {
@@ -257,7 +257,8 @@
     }
   
     .meniu a {
-      font-size: 12px; /* Even smaller font size */
+      font-size: 12px; 
       padding: 3px; /* Minimal padding */
     }
+
   }
